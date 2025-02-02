@@ -1,4 +1,4 @@
-import { Pressable, StyleSheet, View, Text } from "react-native";
+import { Pressable,  View, Text } from "react-native";
 
 export default function CustomButton({ children, style, handler, textStyle }) {
   return (
