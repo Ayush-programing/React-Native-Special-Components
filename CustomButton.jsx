@@ -1,13 +1,11 @@
 import { Pressable, StyleSheet, View, Text } from "react-native";
 
-export default function CustomButton({ children, style, handler }) {
+export default function CustomButton({ children, style, handler, textStyle }) {
   return (
     <View style={style}>
       <Pressable onPress={handler}>
-        <Text>{children}</Text>
+        <Text style={textStyle}>{children}</Text>
       </Pressable>
     </View>
   );
 }
-
-const styles = StyleSheet.create({});
